@@ -9,11 +9,12 @@
 }
 
 body{
+    transition: 0.3s ease-in;
     margin-left: 70px;
     margin-right: 70px;
 }
 .container{
-    margin: 10px;
+    
     display: grid;
     grid-template-columns: repeat(2,1fr);
 
@@ -63,12 +64,75 @@ body{
 }
 
 .profile{
-    margin-top: 20px;
+    
+    position: relative;
+    top: 10%;
+    left: 40%;
+    justify-content: center;
     margin-left: 100px;
+    margin: 0px;
+    padding: 0px;
+    margin: 2px;
+    
+    
 }
+
+
+
+.mypic{
+    margin-top: 10px;
+    width: 135px ;
+    
+}
+
+.article{
+    margin-top: 20px;
+}
+
+.article h1{
+
+    font-size: 50px;
+}
+.article p{
+    
+    width: 700px;
+}
+
 .main{
-   
+    position: relative;
     grid-column: span 2 ;
     display: grid;
     grid-template-columns: 430px 1fr;
+}
+
+.footer{
+    position: absolute;
+    bottom: 50px;
+    left: 40.01%;
+    padding: 30px;
+}
+
+button{
+    
+    border-width: 0px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: 0.3s ease-in;
+    
+}
+
+button:hover{
+    box-shadow: 1px 1px 5px -5px #000000;
+    font-weight: bolder;
+    border-radius: 3px;
+    transform: scale(1.025);
+    background-color: rgb(29, 28, 28);
+    color: white;
+}
+
+.footer img{
+    margin-left: 15px ;
+    margin-left: 15px ;
+    width: 30px;
+    opacity: 80%;
 }
