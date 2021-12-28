@@ -46,7 +46,9 @@ body{
     transform: scale(0.90);
 }
 
-
+::selection{
+    background-color: rgb(213, 250, 1);
+}
 .logoside h1{
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
