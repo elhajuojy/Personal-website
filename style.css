@@ -20,24 +20,29 @@ body{
     grid-template-columns: repeat(2,1fr);
 }
 
+
+.logoside{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    
+}
+
 .logoside img{
     cursor: pointer;
     transition: 0.5s ease;
     width: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-stretch: expanded;
 }
 .logoside h1{
     cursor: pointer;
-    opacity: 82%;
-    font-size: 15px;
-   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #162A35;
+    font-size: 18px;
     margin-top: 20px;
 }
 
 
-.logoside h1:hover{
-    color: rgb(235, 62, 62);
-}
 
 .logoside img:hover{
     box-shadow: 1px 1px 5px -5px #000000;
@@ -73,13 +78,6 @@ body{
     box-shadow: none;
 }
 
-.logoside{
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    justify-content: center;
-    align-content: center;
-    
-}
 
 
 
@@ -172,6 +170,23 @@ button:hover{
     opacity: 80%;
 }
 
+a{
+    text-decoration: none;
+    border: none;
+    background: none;
+    border-style: none;
+    color: transparent;
+
+}
+a:active{
+    text-decoration: none;
+    border: none;
+    background: none;
+    border-style: none;
+    color: transparent;
+    
+}
 .footer img:hover{
+    transform: rotate(360deg);
     opacity: 90%;
 }
