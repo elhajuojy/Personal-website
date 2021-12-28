@@ -24,16 +24,29 @@ body{
 .logoside{
     display: grid;
     grid-template-columns: 60px 1fr;
-    
+   margin-top: 10px;
 }
 
 .logoside img{
     cursor: pointer;
     transition: 0.5s ease;
-    width: 50px;
-    margin-top: 20px;
-    font-stretch: expanded;
+    
+   
 }
+.logo-mh{
+    width: 50px;
+}
+.text-logo-img{
+    transition: 0.5s ;
+    margin-top: 10px;
+    width: 200px;
+}
+.text-logo-img:hover{
+    opacity: 85%;
+    transform: scale(0.90);
+}
+
+
 .logoside h1{
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,7 +57,7 @@ body{
 
 
 
-.logoside img:hover{
+.logoside .logo-mh:hover{
     box-shadow: 1px 1px 5px -5px #000000;
     transform: rotate(360deg);
 }
@@ -94,6 +107,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
+
 
 .profile h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
