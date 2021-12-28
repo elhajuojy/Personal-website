@@ -1,0 +1,74 @@
+@import url(//db.onlinewebfonts.com/c/f2ecc6ef740fcf60de095b0b087dd58d?family=OCR+A+Extended);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+
+*{
+    font-family: 'OCR+A+Extended','Roboto',sans-serif;
+
+}
+
+body{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.container{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.logoside img{
+    margin-top: 10px;
+}
+.logoside h1{
+    margin-top: 10px;
+}
+
+.nav{
+    position: relative;
+    grid-column: span 2 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+   
+}
+
+.nav-btn{
+    margin-top: 20px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 346px;
+    height: 49px;
+    right: 5%;
+    font-size: 37px;
+    
+
+}
+.nav-btn button{
+    background: none;
+    box-shadow: none;
+}
+
+.logoside{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.profile{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.main{
+   
+    grid-column: span 2 ;
+    display: grid;
+    grid-template-columns: 430px 1fr;
+}
