@@ -9,8 +9,24 @@
 
 }
 
+
+
+
+.theme-light {
+    --color-primary: white;
+    --font-color: #1a1616;
+
+  }
+.theme-dark {
+    --color-primary:  #1a1616;
+    --font-color: #ffffff;
+}
+
+
 body{
-    color: #162A35;
+    
+    background-color: var(--color-primary);
+    color: var(--font-color);
     transition: 0.3s ease-in;
     margin-left: 70px;
     margin-right: 70px;
@@ -18,6 +34,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+
 }
 
 
@@ -49,15 +66,6 @@ body{
 ::selection{
     background-color: rgb(213, 250, 1);
 }
-.logoside h1{
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #162A35;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-
 
 
 .logoside .logo-mh:hover{
@@ -90,6 +98,8 @@ body{
 
 }
 .nav-btn button{
+    background-color: var(--color-primary);
+    color: var(--font-color);
     background: none;
     box-shadow: none;
 }
@@ -175,8 +185,8 @@ button:hover{
     font-weight: bolder;
     border-radius: 3px;
     transform: scale(1.025);
-    background-color: rgb(29, 28, 28);
-    color: white;
+    background-color: var(--font-color);
+    color: var(--color-primary);
 }
 
 .footer img{
@@ -206,4 +216,12 @@ a:active{
 .footer img:hover{
     transform: rotate(360deg);
     opacity: 90%;
+}
+
+
+
+.btn-switch button {
+    /* i used none so the button doesn't appear
+     you can use alt + s to switch theme*/
+    display: none;
 }
